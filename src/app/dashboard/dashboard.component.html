@@ -1,2 +1,20 @@
 <!--TODO: melhorar o layout dos cards para exibir ao menos 2 por linha em telas > md, e pequenas (sm) 1 -->
-<app-card [card]="card" *ngFor="let card of cards"></app-card>
+<div *ngIf="loading" class="loading loading-dashboard">
+    <mat-spinner *ngIf="loading"></mat-spinner>
+</div>
+<ng-container *ngIf="!loading">
+    <h2 class="titulo-body">Minhas Habilidades</h2>
+    <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div fxFlex="33%" fxFlex.lg="33%" fxFlex.sm="50%" fxFlex.md="50%" fxFlex.xs="100%"
+                *ngFor="let card of cards">
+                <app-card [card]="card"></app-card>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<a class="btn" href="#" *ngIf="!loading">
+    <button mat-fab color="primary" style="background-color: #6b2fc2 !important;">
+        <mat-icon>north</mat-icon>
+    </button>
+</a>

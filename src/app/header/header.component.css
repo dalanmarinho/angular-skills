@@ -1,0 +1,68 @@
+.example-card {
+  max-width: 400px;
+}
+
+.conteudo{
+  width: 35%;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+.titulo{
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.sub-titulo{
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.descricao{
+  color: #ded7d7;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.container-titulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  height: 40vh;
+  background: #402193;
+  background-image: linear-gradient(to right, #6b2fc2, #a540c4, #de4fc5);
+  /*background: #402193;*/
+}
+
+mat-grid-tile .mat-figure {
+
+  font-weight: bold;
+}
+
+.logo-angular{
+  width: 10%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+@media (max-width: 635px){
+  .conteudo{
+    width: 80%!important;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .logo-angular{
+    display: none!important;
+  }
+}

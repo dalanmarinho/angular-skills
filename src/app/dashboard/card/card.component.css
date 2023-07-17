@@ -1,3 +1,76 @@
 .example-card {
-    max-width: 400px;
-  }
+  max-width: 400px;
+  min-height: 520px;
+}
+
+.mat-card-header {
+  justify-content: center !important;
+}
+
+.mat-card {
+  box-shadow: 0 2px 20px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%) !important;
+  border-radius: 20px;
+  padding: 0px !important;
+  padding-bottom: 16px !important;
+}
+
+mat-card-header {
+  background: #a540c4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+}
+
+.mat-card-header .mat-card-title {
+  margin-top: 12px;
+}
+
+mat-card-content {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+mat-card-actions {
+  margin-left: 0px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imagem-card {
+  width: 100%;
+  min-height: 282px;
+  max-height: 285px;
+  object-fit: cover;
+}
+
+.content-buttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 2%;
+}
+
+.content-buttons :first-child{
+  margin-right: 5px;
+}
+
+.like-button {
+  box-shadow: 0 3px 20px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%)!important;
+  background-color: #a540c4 !important;
+  color: white !important;
+}
+
+.share-button {
+  box-shadow: 0 3px 20px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%)!important;
+}
+
+.color-blue{
+  background-color: blue!important;
+}
+
+.color-purple{
+  background-color: #6b2fc2!important;
+}

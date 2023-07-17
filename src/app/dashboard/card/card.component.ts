@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { SkillsService } from "../../skills.service"
 
 @Component({
   selector: 'app-card',
@@ -8,14 +9,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Input() card;
-  constructor() { }
+  constructor(private skillsService: SkillsService) { }
 
   ngOnInit() {
   }
 
   onLike(card: any){
-    // TODO: incrementar o like, salvar via rest
+    if(card){
+      card['likes'] = Number(card['likes'])+1;
+      this.skillsService.editClique(card).subscribe();
+    }
   }
+
 
   onShare(card: any){
     // TODO: abrir o link do seu linkedin
