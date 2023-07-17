@@ -66,3 +66,9 @@ mat-grid-tile .mat-figure {
     display: none!important;
   }
 }
+
+@media (max-width: 389px){
+  .descricao{
+    display: none!important;
+  }
+}
